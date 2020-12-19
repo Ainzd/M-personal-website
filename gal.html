@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+
+<link rel="icon" href="image/askyourfrezlogo.png">
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+ 
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<link rel="stylesheet" href="stlye.css">
+
+
+    
+</head>
+<body>
+	<div class="box-area">
+		
+        <header>
+			<div class="wrapper">
+				<div class="logo">
+					<a href="index.html">My Personal Website</a>
+				</div>
+				<nav>
+					<a href="index.html">Home</a> 
+                    <a href="exp.html">Experience</a> 
+                    <a href="edu.html">Education</a> 
+                    <a href="fam.html">family</a> 
+                    <a href="gal.html">Gallery</a>
+				</nav>
+			</div>
+		</header>
+		<div class="banner-area">
+			<h2>gallery</h2>
+            <audio src="music/Gekkan%20Shoujo%20Nozaki-kun%20ED%20Full.mp3" controls></audio>
+
+
+		</div>
+		<div class="content-area ">
+			<div class="wrapper">
+                    <a class="rainbowgal" href="https://www.instagram.com/nor_mandd/">MY ARTWORK</a>
+            <div class="row">
+            
+  <div class="column">
+    <img src="image/spiretedaway.jpg" alt="spireted away fanart" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/little%20girl1.jpg" alt="manga fanart" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/endavour.png" alt="aiman" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="image/junjiito%20uzumaki1.jpg" alt="uzumaki fanart" onclick="myFunction(this);">
+  </div>
+</div>    
+
+
+<div class="containerr">
+  
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+
+  <img id="expandedImg" style="width:50%">
+
+
+  <div class="fontbigg" id="imgtext"></div>
+</div>
+       
+    
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+</div>
+
+    
+    <footer class="font footer">
+        <footer>
+            <div class="font w3-padding-32">
+                <a href="https://twitter.com/ainzd1">Check Out My Social Media</a>
+            </div>
+ 
+        </footer>
+    </footer>
+    
+    </div>
+    </div>
+    </body>
+</html>
